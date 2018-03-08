@@ -18,7 +18,6 @@ input[type=text], select, textarea {
 
 input[type=text]:hover {
 background-color: rgb(242, 245, 243);
-border: green;
 }
 
 textarea:hover {
