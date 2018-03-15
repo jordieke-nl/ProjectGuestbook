@@ -33,6 +33,8 @@ if(isset($_POST["firstname"]) && isset($_POST["lastname"])) {
   echo "You need to enter data in all the boxes.";
 }
 
+
+
 }
 
 
@@ -63,7 +65,8 @@ if(isset($_POST["firstname"]) && isset($_POST["lastname"])) {
         <label for="fname">First Name*</label>
         <input type="text" id="fname" name="firstname"  oninvalid="this.setCustomValidity('Fill in your firstname.')"
         oninput="this.setCustomValidity('')" placeholder="Your name.." required="required">
-
+      
+        <?php endif; ?>
         <label for="lname">Last Name*</label>
         <input type="text" id="lname" name="lastname" oninvalid="this.setCustomValidity('Fill in your lastname (insertion possible).')"
         oninput="this.setCustomValidity('')" placeholder="Your last name (insertion also possible).." required="required">
